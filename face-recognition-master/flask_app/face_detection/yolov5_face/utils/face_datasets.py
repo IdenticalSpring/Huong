@@ -121,7 +121,7 @@ def create_dataloader(
         torch.utils.data.distributed.DistributedSampler(dataset) if rank != -1 else None
     )
     loader = torch.utils.data.DataLoader if image_weights else InfiniteDataLoader
-    # Use torch.utils.data.DataLoader() if dataset.properties will update during training else InfiniteDataLoader()
+    # Use torch.add.data.DataLoader() if dataset.properties will update during training else InfiniteDataLoader()
     dataloader = loader(
         dataset,
         batch_size=batch_size,
@@ -1036,7 +1036,7 @@ def flatten_recursive(path="../coco128"):
 
 def extract_boxes(
     path="../coco128/",
-):  # from utils.datasets import *; extract_boxes('../coco128')
+):  # from add.datasets import *; extract_boxes('../coco128')
     # Convert detection dataset into classification dataset, with one directory per class
 
     path = Path(path)  # images dir
@@ -1084,7 +1084,7 @@ def extract_boxes(
 
 def autosplit(
     path="../coco128", weights=(0.9, 0.1, 0.0)
-):  # from utils.datasets import *; autosplit('../coco128')
+):  # from add.datasets import *; autosplit('../coco128')
     """Autosplit a dataset into train/val/test splits and save path/autosplit_*.txt files
     # Arguments
         path:       Path to images directory

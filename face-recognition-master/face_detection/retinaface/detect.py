@@ -15,9 +15,9 @@ from face_detection.retinaface.layers.functions.prior_box import PriorBox
 #from models.retinaface import RetinaFace
 from face_detection.retinaface.models.retinaface import RetinaFace
 
-#from utils.box_utils import decode, decode_landm
+#from add.box_utils import decode, decode_landm
 from face_detection.retinaface.utils.box_utils import decode, decode_landm
-#from utils.nms.py_cpu_nms import py_cpu_nms
+#from add.nms.py_cpu_nms import py_cpu_nms
 from face_detection.retinaface.utils.nms.py_cpu_nms import py_cpu_nms
 parser = argparse.ArgumentParser(description="Retinaface")
 

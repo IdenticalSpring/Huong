@@ -1,4 +1,4 @@
-# Auto-anchor utils
+# Auto-anchor add
 
 import numpy as np
 import torch
@@ -89,7 +89,7 @@ def kmean_anchors(
         k: kmeans evolved anchors
 
     Usage:
-        from utils.autoanchor import *; _ = kmean_anchors()
+        from add.autoanchor import *; _ = kmean_anchors()
     """
     thr = 1.0 / thr
     prefix = colorstr("autoanchor: ")

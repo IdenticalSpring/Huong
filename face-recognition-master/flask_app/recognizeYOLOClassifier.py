@@ -8,7 +8,7 @@ from face_detection.scrfd.detector import SCRFD  # Face detection
 from face_tracking.tracker.byte_tracker import BYTETracker  # Tracking
 from face_tracking.tracker.visualize import plot_tracking  # Tracking visualization
 from face_recognition.arcface.model import iresnet_inference  # Face recognition
-from face_recognition.arcface.utils import compare_encodings, read_features  # Recognition utils
+from face_recognition.arcface.utils import compare_encodings, read_features  # Recognition add
 
 # Device configuration
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")

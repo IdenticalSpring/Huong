@@ -7,8 +7,7 @@
 </head>
 <body>
     <h1>Live Video with Recognition</h1>
-    <img src="{{ url_for('video_feed') }}" style="width: 100%; height: auto;">
-
+    <img src="{{ url_for('video_feed') }}" style="width: 60%; height: auto;">
     <form action="{{ url_for('add_persons_route') }}" method="post" style="margin-top: 20px;">
         <button type="submit" style="padding: 10px 20px; font-size: 16px;">Add Persons</button>
     </form>

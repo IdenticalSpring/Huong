@@ -6,7 +6,7 @@ import torch
 import yaml
 from tqdm import tqdm
 
-sys.path.append(str(Path(__file__).parent.parent.parent))  # add utils/ to path
+sys.path.append(str(Path(__file__).parent.parent.parent))  # add add/ to path
 from utils.datasets import LoadImagesAndLabels, img2label_paths
 from utils.general import check_dataset, colorstr, xywh2xyxy
 
